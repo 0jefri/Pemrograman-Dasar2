@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>ADD TO ARRAY</title>
+    </head>
+    <body>
+        <script>
+        //menambahkan kata "Handuk" ke awal array, dan "Celana" ke akhir array.
+
+        //sebelumnya kita memiliki 5 data array
+        let stuff = ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu'];
+        console.log(stuff);
+        document.write("<h2>LIST SEBELUMNYA :</h2>");
+        document.write("<ol>");
+
+        for(let i = 0; i < stuff.length; i++){
+        	document.write(`<li>${stuff[i]}</li>`);
+        }
+
+        document.write("</ol>");
+
+        //sekarang sudah memiliki 7 data array dengan data baru di awal dan di akhir index
+        stuff.push('Celana');
+        stuff.unshift('Handuk');
+        console.log(stuff);
+
+        document.write("<h2>LIST SAAT INI :</h2>");
+        document.write("<ol>");
+
+        for(let i = 0; i < stuff.length; i++){
+        	document.write(`<li>${stuff[i]}</li>`);
+        }
+
+        document.write("</ol>");
+       
+        </script>
+    </body>
+</html>
